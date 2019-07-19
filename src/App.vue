@@ -10,13 +10,12 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Calc from './components/calc'
 import CounterGroup from './components/CounterGroup.vue'
 
 export default {
   name: 'app',
   components: {
-    // Calc,
+    HelloWorld,
     CounterGroup
   },
   data: function() {

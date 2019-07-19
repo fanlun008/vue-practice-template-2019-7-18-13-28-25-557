@@ -1,6 +1,6 @@
 <template>
  <div>
-     <span>{{this.counterNum}}</span>
+    <span>{{this.counterNum}}</span>
     <calc v-for="count in this.counterNum" :key="count"></calc>
  </div>
 </template>
@@ -11,9 +11,7 @@
         components: {
             calc
         },
-        props: {
-            counterNum: Number
-        },
+        props: ["counterNum"],
         methods: {
             
         }

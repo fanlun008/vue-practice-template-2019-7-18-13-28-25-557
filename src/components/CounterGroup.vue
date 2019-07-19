@@ -23,10 +23,15 @@
         methods: {
             addToParent: function(data) {
                 // this.totalCount++;
-                this.totalCount = this.totalCount + 1
+                this.totalCount = this.totalCount + data
             },
             decreaseToParent: function(data) {
-                this.totalCount = this.totalCount - 1
+                this.totalCount = this.totalCount - data
+            }
+        },
+        watch: {
+            counterNum: function() {
+                this.totalCount = 0
             }
         }
     }

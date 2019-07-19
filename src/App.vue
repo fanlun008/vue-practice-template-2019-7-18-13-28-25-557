@@ -2,9 +2,9 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Calc/>
-    <!-- <input type="text" v-model.number="num">
-    <counter-group :counterNum="num"></counter-group> -->
+    <!-- <Calc/> -->
+    <input type="text" v-model.number="num">
+    <counter-group :counterNum="num"></counter-group>
   </div>
 </template>
 
@@ -16,9 +16,9 @@ import Calc from './components/calc'
 export default {
   name: 'app',
   components: {
-    Calc
-    // HelloWorld,
-    // CounterGroup
+    // Calc
+    HelloWorld,
+    CounterGroup
   },
   data: function() {
     return {

@@ -16,11 +16,13 @@
             }
         },
         methods: {
-            add(){
+            add: function() {
                 this.number++;
+                this.$emit("addToParent", this.number)
             },
-            decrease() {
+            decrease: function() {
                 this.number--;
+                this.$emit("decreaseToParent", this.number)
             }
         }
     }
